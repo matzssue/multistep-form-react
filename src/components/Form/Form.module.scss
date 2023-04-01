@@ -1,0 +1,60 @@
+$primary: hsl(213, 96%, 18%);
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: auto;
+  gap: 10px;
+  margin-top: 2rem;
+  color: $primary;
+
+  h2 {
+    font-size: 2rem;
+    color: $primary;
+    margin-bottom: 0.5rem;
+  }
+
+  label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+  }
+
+  input {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+
+    &:focus {
+      outline: none;
+      border-color: blue;
+    }
+    &.invalid {
+      background-color: rgba($color: #e25050, $alpha: 0.7);
+    }
+  }
+}
+button {
+  align-self: flex-end;
+  background-color: hsl(243, 100%, 62%);
+  color: white;
+  width: 40%;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.error {
+  color: red;
+}

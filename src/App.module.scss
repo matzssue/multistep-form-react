@@ -1,0 +1,11 @@
+.container {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  background-color: rgb(228, 226, 226);
+  border-radius: 5px;
+  color: white;
+  width: 60vw;
+  height: auto;
+  margin: 0 auto;
+  padding: 1rem;
+}

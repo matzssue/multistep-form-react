@@ -1,0 +1,44 @@
+@import "../../mixin.module";
+
+.container {
+  background-image: url(../../assets/images/bg-sidebar-desktop.svg);
+  background-repeat: no-repeat;
+
+  background-size: contain;
+  height: 60vh;
+  width: auto;
+
+  ul {
+    padding: 3rem;
+    list-style: none;
+    li {
+      margin-top: 2rem;
+      display: flex;
+      gap: 15px;
+    }
+  }
+}
+
+.icon {
+  @include center;
+  cursor: pointer;
+  min-width: 45px;
+  height: 45px;
+  color: #fff;
+  background-color: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 1px white solid;
+  border-radius: 50%;
+}
+
+.step {
+  display: block;
+  font-size: 0.9rem;
+  color: rgb(212, 212, 212);
+}
+
+.step-info {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
